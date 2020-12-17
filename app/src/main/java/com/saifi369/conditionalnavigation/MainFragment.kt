@@ -11,7 +11,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         super.onViewCreated(view, savedInstanceState)
 
         btn_show_profile.setOnClickListener {
-            val action = MainFragmentDirections.actionMainFragmentToLoginFragment()
+            val action = MainFragmentDirections.actionMainFragmentToProfileFragment()
             findNavController().navigate(action)
         }
     }
